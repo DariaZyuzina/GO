@@ -28,7 +28,7 @@
                 <li><a href="#halls">Залы</a></li>
                 <li><a href="#aboutUs">О нас</a></li>
                 <li><a href="#booking">Бронь</a></li>
-                <li><a href="#">Отзывы</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
                 <li><a href="#contacts">Контакты</a></li>
             </ul>
         </nav>
@@ -59,20 +59,21 @@
         </section>
 
         <section id="booking">
-            <h2>Забронировать</h2>
+            <h2>Забронировать зал просто</h2>
             <form name="toBook" action="https://jsonplaceholder.typicode.com/posts" method="post">
 
                 <fieldset>
-                    <input type="radio" id="vibes" name="halls" value="80's vibes" checked>
+                    <legend>Выбери зал</legend>
+                    <input type="radio" id="vibes" name="halls" value="80s_vibes" checked>
                     <label for="vibes">80's vibes</label>
 
-                    <input type="radio" id="wars" name="halls" value="Star wars">
+                    <input type="radio" id="wars" name="halls" value="star_wars">
                     <label for="wars">Star wars</label>
 
-                    <input type="radio" id="west" name="halls" value="Wild west">
+                    <input type="radio" id="west" name="halls" value="wild_west">
                     <label for="west">Wild west</label>
 
-                    <input type="radio" id="neon" name="halls" value="Neon style">
+                    <input type="radio" id="neon" name="halls" value="neon_style">
                     <label for="neon">Neon style</label>
                 </fieldset>
 
@@ -80,24 +81,24 @@
                     <legend>Собери набор развлечений</legend>
                     <fieldset>
                         <legend>Приставка:</legend>
-                        <label><input type="radio" name="console" value="PlayStation">PlayStation</label>
-                        <label><input type="radio" name="console" value="Sega Mega Drive">Sega Mega Drive</label>
-                        <label><input type="radio" name="console" value="X-box One S">X-box One S</label>
-                        <label><input type="radio" name="console" value="Dendy">Dendy</label>
+                        <label><input type="radio" name="console" value="playStation">PlayStation</label>
+                        <label><input type="radio" name="console" value="sega_Mega_Drive">Sega Mega Drive</label>
+                        <label><input type="radio" name="console" value="x-box_One_S">X-box One S</label>
+                        <label><input type="radio" name="console" value="dendy">Dendy</label>
                     </fieldset>
 
                     <fieldset>
                         <legend>Настольные игры:</legend>
-                        <label><input type="checkbox" name="game" value="Jenga">Jenga</label>
-                        <label><input type="checkbox" name="game" value="Monopoly">Monopoly</label>
-                        <label><input type="checkbox" name="game" value="Manchkin">Манчкин</label>
-                        <label><input type="checkbox" name="game" value="Alias">Alias</label>
+                        <label><input type="checkbox" name="game" value="jenga">Jenga</label>
+                        <label><input type="checkbox" name="game" value="monopoly">Monopoly</label>
+                        <label><input type="checkbox" name="game" value="manchkin">Манчкин</label>
+                        <label><input type="checkbox" name="game" value="alias">Alias</label>
                     </fieldset>
 
                     <fieldset>
                         <legend>Дополнительно:</legend>
                         <label><input type="checkbox" name="additionally" value="karaoke">Караоке</label>
-                        <label><input type="checkbox" name="additionally" value="VR">VR</label>
+                        <label><input type="checkbox" name="additionally" value="vr">VR</label>
                     </fieldset>
                 </fieldset>
 
@@ -133,13 +134,9 @@
                         <label for="email">E-mail<span>*</span></label>
                         <input type="email" name="email" id="email" required>
                     </div>
-
-                    <input type="checkbox" id="valid" name="valid" value="validAge" required>
-                    <label for="valid">Я старше 18 лет</label>
                 </fieldset>
+
                 <button type="submit">Забронировать</button>
-                <label><input type="checkbox" name="agreement" value="agree" required>Согласен на обработку
-                    данных</label>
             </form>
         </section>
 
@@ -157,6 +154,33 @@
                 <p><b>GAME OVER</b> - это место незабываемых впечатлений</p>
                 <p><cite>Аркадий Абакшин, создатель игровоть территории GAME OVER</cite></p>
             </blockquote>
+        </section>
+
+        <section id="reviews">
+            <h2>Отзывы посетителей</h2>
+            <div>
+                <figure>
+                    <img src="img/reviews/1.jpeg" alt="девушка"  width="100px">
+                    <figcaption>Наталья Михайловна</figcaption>
+                </figure>
+                <p>Отмечали здесь день рождения компании друзей, всем было очень круто! VR это просто бомба, никогда ещё не был в таком полном игровом погружение. Сервис на высоте!</p>
+            </div>
+
+            <div>
+                <figure>
+                    <img src="img/reviews/2.jpeg" alt="мужчина в шляпе" width="100px">
+                    <figcaption>Андрей Иванов</figcaption>
+                </figure>
+                <p>Были в комнате Дикий Запад, пели в караоке под Инстасамку, отличный получился корпаратив! У нас городе больше нет подобных заведений</p>
+            </div>
+
+            <div>
+                <figure>
+                    <img src="img/reviews/3.jpeg" alt="мужчина" width="100px">
+                    <figcaption>Артем Сайков</figcaption>
+                </figure>
+                <p> Немного подвисала игра VR очках а так все норм. Крутое оформление комнаты в стиле звёздных войн, попал в атмосферу космоса</p>
+            </div>
         </section>
     </main>
     <footer id="contacts">
