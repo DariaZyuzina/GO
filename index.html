@@ -38,13 +38,42 @@
         <section>
             <h1> У нас есть все для классного отдыха с друзьями!</h1>
             <ul>
-                <li><img src="img/vr.jpg" alt="Мужчина в VR очках"><br>VR очки</li>
-                <li><img src="img/audio.jpg" alt="DJ пульт"><br>Аудио-система 5.1 с отличным звуком</li>
-                <li><img src="img/micro.jpg" alt="Девушка поет в микрофон"><br>Караоке (четыре микрофона)</li>
-                <li><img src="img/game.jpg" alt="Настольная игра"><br>Настольные игры</li>
-                <li><img src="img/netflix.jpg" alt="Телевизор с заставкой Netflix"><br>Кино сервисы Netflix, IVI,
-                    MegoGo, КиноПоиск, Okko</li>
-                <li><img src="img/sony.jpg" alt="Игровая зона с Sony PlayStation"><br>PlayStation 5</li>
+                <li>
+                    <figure>
+                        <img src="img/vr.jpg" alt="Мужчина в VR очках">
+                        <figcaption>VR очки</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/audio.jpg" alt="DJ пульт">
+                        <figcaption>Аудио-система 5.1 с отличным звуком</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/micro.jpg" alt="Девушка поет">
+                        <figcaption>Караоке (четыре микрофона)</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/game.jpg" alt="Настольная игра">
+                        <figcaption>Настольные игры</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/netflix.jpg" alt="Netflix">
+                        <figcaption>Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/sony.jpg" alt="Игровая зона">
+                        <figcaption>layStation 5</figcaption>
+                    </figure>
+                </li>
             </ul>
         </section>
 
@@ -106,32 +135,32 @@
                     <legend>Выбери дату и время</legend>
                     <div>
                         <div>
-                            <label for="data">Дата<span>*</span></label>
+                            <label for="data">Дата</label>
                             <input type="date" id="data" name="data" required>
 
-                            <label for="time">Время<span>*</span></label>
+                            <label for="time">Время</label>
                             <input type="time" id="time" name="time" required>
                         </div>
 
-                        <label for="numberOfPerson">Количество человек<span>*</span></label>
+                        <label for="numberOfPerson">Количество человек</label>
                         <input type="number" id="numberOfPerson" name="numberOfPerson" min="1" max="20" required>
                     </div>
 
                     <div>
-                        <label for="name">Имя<span>*</span></label>
+                        <label for="name">Имя</label>
                         <input type="text" id="name" name="name" maxlength="20" required>
 
-                        <label for="lastName">Фамилия<span>*</span></label>
+                        <label for="lastName">Фамилия</label>
                         <input type="text" id="lastName" name="lastName" maxlength="20" required>
                     </div>
 
                     <div>
-                        <label for="phone">Номер телефона<span>*</span></label>
+                        <label for="phone">Номер телефона</label>
                         <input type="tel" id="phone" name="phone"
                             pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" title="+7-___-___-__-__"
                             required>
 
-                        <label for="email">E-mail<span>*</span></label>
+                        <label for="email">E-mail</label>
                         <input type="email" name="email" id="email" required>
                     </div>
                 </fieldset>
@@ -143,12 +172,14 @@
         <section id="aboutUs">
             <h2>О нас</h2>
 
-            <p>Для наших гостей мы создали концептуальный <i>новое игровое пространство виртуальной реальности</i> в
-                центральной
-                части
-                города.</p>
-            <p>Каждый день мы стараемся создавать для вас самый лучший игровой атмосферу и радовать вас тупыми игровыми
-                разработками со всего мира.</p>
+            <div>
+                <p>Для наших гостей мы создали концептуальный <i>новое игровое пространство виртуальной реальности</i> в
+                    центральной
+                    части
+                    города.</p>
+                <p>Каждый день мы стараемся создавать для вас самый лучший игровой атмосферу и радовать вас тупыми игровыми
+                    разработками со всего мира.</p>
+            </div>
 
             <blockquote>
                 <p><b>GAME OVER</b> - это место незабываемых впечатлений</p>
@@ -158,29 +189,37 @@
 
         <section id="reviews">
             <h2>Отзывы посетителей</h2>
-            <div>
-                <figure>
-                    <img src="img/reviews/1.jpeg" alt="девушка">
-                    <figcaption>Наталья Михайловна</figcaption>
-                </figure>
-                <p>Отмечали здесь день рождения компании друзей, всем было очень круто! VR это просто бомба, никогда ещё не был в таком полном игровом погружение. Сервис на высоте!</p>
-            </div>
-
-            <div>
-                <figure>
-                    <img src="img/reviews/2.jpeg" alt="мужчина в шляпе">
-                    <figcaption>Андрей Иванов</figcaption>
-                </figure>
-                <p>Были в комнате Дикий Запад, пели в караоке под Инстасамку, отличный получился корпаратив! У нас городе больше нет подобных заведений</p>
-            </div>
-
-            <div>
-                <figure>
-                    <img src="img/reviews/3.jpeg" alt="мужчина">
-                    <figcaption>Артем Сайков</figcaption>
-                </figure>
-                <p> Немного подвисала игра VR очках а так все норм. Крутое оформление комнаты в стиле звёздных войн, попал в атмосферу космоса</p>
-            </div>
+            <ul>
+                <li>
+                    <article>
+                        <figure>
+                            <img src="img/reviews/1.jpeg" alt="девушка">
+                            <figcaption>Наталья Михайловна</figcaption>
+                        </figure>
+                        <p>Отмечали здесь день рождения компании друзей, всем было очень круто! VR это просто бомба, никогда ещё не был в таком полном игровом погружение. Сервис на высоте!</p>
+                    </article>
+                </li>
+    
+                <li>
+                    <article>
+                        <figure>
+                            <img src="img/reviews/2.jpeg" alt="мужчина в шляпе">
+                            <figcaption>Андрей Иванов</figcaption>
+                        </figure>
+                        <p>Были в комнате Дикий Запад, пели в караоке под Инстасамку, отличный получился корпаратив! У нас городе больше нет подобных заведений</p>    
+                    </article>
+                </li>
+    
+                <li>
+                    <article>
+                        <figure>
+                            <img src="img/reviews/3.jpeg" alt="мужчина">
+                            <figcaption>Артем Сайков</figcaption>
+                        </figure>
+                        <p> Немного подвисала игра VR очках а так все норм. Крутое оформление комнаты в стиле звёздных войн, попал в атмосферу космоса</p>
+                    </article>
+                </li>
+            </ul>
         </section>
     </main>
     <footer id="contacts">
