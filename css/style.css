@@ -7,6 +7,11 @@ body {
     color: #FFFFFF;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 .wrapper {
     max-width: 1200px; 
     padding: 30px;
@@ -15,37 +20,4 @@ body {
 
 .quote {
     text-transform: uppercase;
-}
-
-.question-items li{
-    background-color: #fff;
-    color: #1C1A1A;
-    font-weight: 700;
-    font-size: 24px;
-    padding: 30px 70px;
-    margin-bottom: 20px;
-    list-style-type: none;
-}
-
-.question-items li:nth-child(even) {
-    background-color: #440F51;
-    color: #fff;
-}
-
-.question-items li:after {
-    content: '';
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-image: url(../img/elements/open.svg);
-    background-size: contain;
-}
-
-.question-items li:nth-child(odd):after {
-    content: '';
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-image: url(../img/elements/open-purple.svg);
-    background-size: contain;
 }
