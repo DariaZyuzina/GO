@@ -1,9 +1,5 @@
 .faq-items {
     display: flow-root;
-    font-weight: 700;
-    font-size: 24px;
-    list-style-type: none;
-    line-height: 1.17%;
 }
 
 .faq-item {
@@ -17,6 +13,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     float: right;
+    margin-top: -24px;
 }
 
 .faq-item:nth-child(odd) {
@@ -39,4 +36,11 @@
 
 .faq-item:not(:last-child) {
     margin-bottom: 20px;
+}
+
+.faq-text {
+    font-weight: 700;
+    font-size: 24px;
+    list-style-type: none;
+    line-height: 1.17%;
 }
