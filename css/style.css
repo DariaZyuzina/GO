@@ -6,14 +6,41 @@
     font-display: swap;
 }
 
-* {
+html {
+    position: relative;
     box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
+    min-width: 320px;
+    min-height: 100vh;
     background-color: #1B1A1B;
     color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+img, svg {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 ul {
@@ -22,10 +49,27 @@ ul {
     margin: 0;
 }
 
-.wrapper {
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+    margin: 0;
+}
+
+iframe {
+    border: none;
+}
+
+.container {
     max-width: 1240px;
     padding: 0 30px;
     margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 100px;
 }
 
 .caption {
@@ -56,7 +100,7 @@ ul {
     background-position: right;
     width: 1180px;
     height: 763px;
-    margin: -150px 0 100px;
+    margin: -150px 0 0;
     position: relative;
     z-index: 1;
 }
@@ -68,6 +112,10 @@ ul {
     text-align: center;
     text-transform: uppercase;
     margin: 0 0 60px;
+}
+
+.halls {
+    margin-bottom: 100px;
 }
 
 .list-halls {
@@ -82,7 +130,7 @@ ul {
 }
 
 .item-halls:last-child {
-    margin-bottom: 100px;
+    margin-bottom: 0;
 }
 
 .link-halls {
@@ -126,6 +174,14 @@ ul {
     background-repeat: no-repeat;
 }
 
+.booking {
+    margin-bottom: 131px;
+}
+
+.about {
+    margin-bottom: 69px;
+}
+
 .text {
     font-weight: 400;
     font-size: 20px;
@@ -142,7 +198,11 @@ ul {
 }
 
 .block-quote {
-    margin: 0 0 69px 0;
+    margin: 0;
+}
+
+.question {
+    margin-bottom: 100px;
 }
 
 .container-quote {
@@ -213,6 +273,10 @@ ul {
     clear: both;
 }
 
+.contacts {
+    margin-bottom: 50px;
+}
+
 .address {
     margin: 0 0 38px 0;
 }
@@ -273,10 +337,6 @@ ul {
 
 .item-social:not(:last-child) {
     margin-right: 26px;
-}
-
-.list-social {
-    margin-bottom: 50px;
 }
 
 .link-social {
