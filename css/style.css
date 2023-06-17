@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Arial Black";
+    src: local("Arial-black"), local("Arial Black"),
+        url("../font/ariblk.ttf") format("ttf");
+    font-weight: 900;
+    font-display: swap;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,19 +13,272 @@
 body {
     background-color: #1B1A1B;
     color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .wrapper {
-    max-width: 1200px; 
-    padding: 30px;
+    max-width: 1240px;
+    padding: 0 30px;
     margin: 0 auto;
 }
 
-.quote {
+.caption {
+    font-family: "Arial Black";
+    font-size: 150px;
+    font-weight: 900;
+    letter-spacing: -0.1em;
+    line-height: 1;
     text-transform: uppercase;
+    padding-top: 116px;
+    margin: 0;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.79;
+    padding-left: 100px;
+    margin: 0;
+}
+
+.hero:after {
+    content: '';
+    display: block;
+    background-image: url("../image_go/hero.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 1180px;
+    height: 763px;
+    margin: -150px 0 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.25;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 60px;
+}
+
+.list-halls {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.item-halls {
+    padding: 275px 0;
+    margin-bottom: 60px;
+}
+
+.item-halls:last-child {
+    margin-bottom: 100px;
+}
+
+.link-halls {
+    display: block;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 211px;
+    margin: 0 auto;
+}
+
+.item-vibes {
+    background-image: url("../image_go/halls/vibes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item-wars {
+    background-image: url("../image_go/halls/wars.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item-west {
+    background-image: url("../image_go/halls/west.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item-neon {
+    background-image: url("../image_go/halls/neon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 0 28px;
+}
+
+.text:last-child {
+    margin-bottom: 0;
+}
+
+.about-us {
+    margin-bottom: 70px;
+}
+
+.block-quote {
+    margin: 0 0 69px 0;
+}
+
+.container-quote {
+    margin-bottom: 40px;
+}
+
+.container-quote:before {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    background-image: url("../img/marks.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 23px;
+    height: 23px;
+}
+
+.container-quote:after {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    background-image: url("../img/marks.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+    padding-right: 15px;
+    width: 23px;
+    height: 23px;
+
+}
+
+.quote {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.quote:last-child {
+    padding-left: 60px;
+}
+
+.creator-block {
+    float: right;
+}
+
+.img-creator {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border-radius: 50%;
+}
+
+.creator-quote {
+    display: inline-block;
+    vertical-align: middle;
+    width: 222px;
+    margin-left: 30px;
+}
+
+.clear-float {
+    clear: both;
+}
+
+.address {
+    margin: 0 0 38px 0;
+}
+
+.contact {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    width: 415px;
+    margin-bottom: 39px;
+}
+
+.link-contact {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.address:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../image_go/adress/location.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 34px;
+    height: 34px;
+    padding-right: 30px;
+}
+
+.phone:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../image_go/adress/phone.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 34px;
+    height: 34px;
+    padding-right: 30px;
+}
+
+.email:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../image_go/adress/mail.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 34px;
+    height: 34px;
+    padding-right: 30px;
+}
+
+.item-social {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.item-social:not(:last-child) {
+    margin-right: 26px;
+}
+
+.list-social {
+    margin-bottom: 50px;
+}
+
+.link-social {
+    color: #FFFFFF;
 }

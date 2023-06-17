@@ -3,17 +3,18 @@
     font-weight: 700;
     font-size: 24px;
     list-style-type: none;
-    line-height: 125%;
+    line-height: 1.17%;
+    margin-bottom: 100px;
 }
 
 .faq-item {
-    padding: 20px 50px;
+    padding: 43px 50px;
 }
 
 .faq-item:after {
     content: '';
-    width: 30px;
-    height: 30px;
+    width: 46px;
+    height: 46px;
     background-size: contain;
     background-repeat: no-repeat;
     float: right;
