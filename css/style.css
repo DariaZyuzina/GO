@@ -278,7 +278,10 @@ iframe {
 }
 
 .address {
-    margin: 0 0 38px 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 38px 33px;
+    width: 222px;
 }
 
 .contact {
@@ -290,14 +293,17 @@ iframe {
 }
 
 .link-contact {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.address:before {
-    content: '';
     display: inline-block;
     vertical-align: middle;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 33px;
+}
+
+.item-address:before {
+    content: '';
+    display: inline-block;
+    vertical-align: super;
     background-image: url("../image_go/adress/location.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -306,10 +312,10 @@ iframe {
     padding-right: 30px;
 }
 
-.phone:before {
+.item-phone:before {
     content: '';
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     background-image: url("../image_go/adress/phone.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -318,10 +324,10 @@ iframe {
     padding-right: 30px;
 }
 
-.email:before {
+.item-email:before {
     content: '';
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     background-image: url("../image_go/adress/mail.svg");
     background-repeat: no-repeat;
     background-size: contain;
