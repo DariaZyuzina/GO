@@ -22,7 +22,8 @@ body {
     min-height: 100vh;
     background-color: #1B1A1B;
     color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 img, svg {
@@ -35,7 +36,6 @@ button {
     padding: 0;
     cursor: pointer;
     border: none;
-    background-color: transparent;
 }
 
 a {
@@ -68,18 +68,25 @@ iframe {
     margin: 0 auto;
 }
 
+.section {
+    padding: 50px 0;
+}
+
+.section:first-child {
+    padding-top: 146px;
+}
+
 .header {
     margin-bottom: 100px;
 }
 
 .caption {
-    font-family: "Arial Black";
+    font-family: "Arial Black", sans-serif;
     font-size: 150px;
     font-weight: 900;
     letter-spacing: -0.1em;
     line-height: 1;
     text-transform: uppercase;
-    padding-top: 116px;
     margin: 0;
 }
 
@@ -198,6 +205,7 @@ iframe {
 }
 
 .block-quote {
+    display: flow-root;
     margin: 0;
 }
 
@@ -265,12 +273,12 @@ iframe {
 .creator-quote {
     display: inline-block;
     vertical-align: middle;
-    width: 222px;
+    font-size: 20px;
+    line-height: 1.4;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 271px;
     margin-left: 30px;
-}
-
-.clear-float {
-    clear: both;
 }
 
 .contacts {
