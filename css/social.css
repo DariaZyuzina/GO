@@ -1,0 +1,12 @@
+.social__item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 26px;
+}
+
+.social__link {
+    color: #FFFFFF;
+}

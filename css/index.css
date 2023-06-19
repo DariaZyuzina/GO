@@ -1,6 +1,9 @@
-@import "normalize.css";
+@import "global.css";
 @import "style.css";
-@import "halls";
-@import "about-us";
+@import "halls.css";
+@import "about-us.css";
+@import "quote.css";
+@import "creator.css";
 @import "faq.css";
-@import "social";
+@import "contact.css";
+@import "social.css";

@@ -1,0 +1,59 @@
+.halls {
+    margin-bottom: 100px;
+}
+
+.halls__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.halls__item {
+    padding: 275px 0;
+    margin-bottom: 60px;
+}
+
+.halls__item:last-child {
+    margin-bottom: 0;
+}
+
+.halls__link {
+    display: block;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 211px;
+    margin: 0 auto;
+}
+
+.halls__item_vibes {
+    background-image: url("../image_go/halls/vibes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.halls__item_wars {
+    background-image: url("../image_go/halls/wars.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.halls__item_west {
+    background-image: url("../image_go/halls/west.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.halls__item_neon {
+    background-image: url("../image_go/halls/neon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

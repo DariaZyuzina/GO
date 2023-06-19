@@ -1,0 +1,23 @@
+.creator {
+    float: right;
+}
+
+.creator__img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: 50% 20%;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.creator__cite {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 400;
+    max-width: 271px;
+}

@@ -1,0 +1,14 @@
+.about-us {
+    margin-bottom: 70px;
+}
+
+.about-us__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 0 28px;
+}
+
+.about-us__text:last-child {
+    margin-bottom: 0;
+}
