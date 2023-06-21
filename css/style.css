@@ -20,8 +20,22 @@
     padding-top: 146px;
 }
 
-.header {
-    margin-bottom: 100px;
+.container__hero{
+    position: relative;
+    padding-bottom: 623px;
+}
+.container__hero:after {
+    content: '';
+    display: block;
+    background-image: url("../image_go/hero.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 675px;
+    height: 762px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .caption {
@@ -42,20 +56,6 @@
     margin: 0;
 }
 
-.hero:after {
-    content: '';
-    display: block;
-    background-image: url("../image_go/hero.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    width: 1180px;
-    height: 763px;
-    margin: -150px 0 0;
-    position: relative;
-    z-index: 1;
-}
-
 .title {
     font-weight: 700;
     font-size: 40px;
@@ -63,19 +63,4 @@
     text-align: center;
     text-transform: uppercase;
     margin: 0 0 60px;
-}
-.booking {
-    margin-bottom: 131px;
-}
-
-.about {
-    margin-bottom: 69px;
-}
-
-.question {
-    margin-bottom: 100px;
-}
-
-.contacts {
-    margin-bottom: 50px;
 }
