@@ -1,3 +1,7 @@
+.social__list {
+    font-size: 0;
+}
+
 .social__item {
     display: inline-block;
     vertical-align: middle;
@@ -8,5 +12,6 @@
 }
 
 .social__link {
+    display: block;
     color: #FFFFFF;
 }

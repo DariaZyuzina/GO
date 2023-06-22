@@ -9,8 +9,11 @@
 .contact__text {
     margin-bottom: 33px;
     width: 290px;
-    white-space: pre-line;
     padding-left: 61px;
+    background-image: url("../image_go/adress/location.svg");
+    background-repeat: no-repeat;
+    background-size: 35px 32px;
+    background-position: left;
 }
 
 .contact__link {
@@ -24,36 +27,18 @@
     margin-bottom: 11px;
 }
 
-.contact__text:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    background-image: url("../image_go/adress/location.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 35px;
-    height: 32px;
-}
-
-.contact__link_phone:before {
-    content: '';
-    position: absolute;
-    left: 0;
+.contact__link_phone {
     background-image: url("../image_go/adress/phone.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 35px;
-    height: 32px;
-    
+    background-size: 35px 32px;
+    background-position: left;
 }
 
-.contact__link_email:before {
-    content: '';
-    position: absolute;
-    left: 0;
+.contact__link_email {
     background-image: url("../image_go/adress/mail.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    width: 35px;
-    height: 32px;
+    background-size: 35px 32px;
+    background-position: left;
 }

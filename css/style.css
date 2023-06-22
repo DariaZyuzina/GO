@@ -22,7 +22,7 @@
 
 .container__hero{
     position: relative;
-    padding-bottom: 623px;
+    min-height: 823px;
 }
 .container__hero:after {
     content: '';

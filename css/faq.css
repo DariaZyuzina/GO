@@ -3,17 +3,16 @@
 }
 
 .faq__item {
-    padding: 43px 50px;
+    padding: 21px 70px;
 }
 
 .faq__item:after {
     content: '';
-    width: 47px;
-    height: 47px;
+    width: 46px;
+    height: 46px;
     background-size: contain;
     background-repeat: no-repeat;
     float: right;
-    margin-top: -24px;
 }
 
 .faq__item:nth-child(odd) {
@@ -39,8 +38,10 @@
 }
 
 .faq__text {
+    display: inline-block;
+    vertical-align: top;
     font-weight: 700;
     font-size: 24px;
     list-style-type: none;
-    line-height: 1.17%;
+    line-height: 1.875;
 }
