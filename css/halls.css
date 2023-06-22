@@ -26,21 +26,21 @@
     margin: 0 auto;
 }
 
-.halls__item_vibes {
+.halls__item_img-vibes {
     background-image: url("../image_go/halls/vibes.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.halls__item_wars {
+.halls__item_img-wars {
     background-image: url("../image_go/halls/wars.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.halls__item_west {
+.halls__item_img-west {
     background-image: url("../image_go/halls/west.jpg");
     background-size: cover;
     background-position: center;
