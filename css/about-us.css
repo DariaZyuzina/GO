@@ -6,6 +6,11 @@
     margin-bottom: 70px;
 }
 
+.about-us__img {
+    float: left;
+    margin-right: 80px;
+}
+
 .about-us__text {
     font-weight: 400;
     font-size: 20px;
