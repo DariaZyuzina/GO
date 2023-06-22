@@ -47,7 +47,7 @@
     background-repeat: no-repeat;
 }
 
-.halls__item_neon {
+.halls__item_img-neon {
     background-image: url("../image_go/halls/neon.jpg");
     background-size: cover;
     background-position: center;
