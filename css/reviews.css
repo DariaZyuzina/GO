@@ -1,14 +1,5 @@
-
-.reviews {
-}
-
 .reviews__container {
     max-width: 1040px;
-}
-
-.reviews__list {
-}
-.reviews__item {
 }
 
 .reviews__column {
@@ -18,7 +9,7 @@
     margin-right: 15px;
 }
 
-.reviews__column:not(:last-child) {
+.reviews__item:not(:last-child) {
     margin-bottom: 50px;
 }
 
