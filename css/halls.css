@@ -26,28 +26,28 @@
     margin: 0 auto;
 }
 
-.halls__item_img-vibes {
+.halls__item_name_vibes {
     background-image: url("../image_go/halls/vibes.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.halls__item_img-wars {
+.halls__item_name_wars {
     background-image: url("../image_go/halls/wars.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.halls__item_img-west {
+.halls__item_name_west {
     background-image: url("../image_go/halls/west.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.halls__item_img-neon {
+.halls__item_name_neon {
     background-image: url("../image_go/halls/neon.jpg");
     background-size: cover;
     background-position: center;

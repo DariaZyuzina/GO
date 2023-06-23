@@ -20,11 +20,11 @@
     padding-top: 146px;
 }
 
-.container__hero{
+.hero__container{
     position: relative;
     min-height: 823px;
 }
-.container__hero:after {
+.hero__container:after {
     content: '';
     display: block;
     background-image: url("../image_go/hero.png");
@@ -38,17 +38,17 @@
     z-index: 1;
 }
 
-.caption {
+.hero__title {
     font-family: "Arial Black", sans-serif;
     font-size: 150px;
     font-weight: 900;
-    letter-spacing: -0.1em;
+    letter-spacing: -15px;
     line-height: 1;
     text-transform: uppercase;
     margin: 0;
 }
 
-.subtitle {
+.hero__subtitle {
     font-weight: 400;
     font-size: 28px;
     line-height: 1.79;
