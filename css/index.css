@@ -1,6 +1,9 @@
 @import "global.css";
 @import "style.css";
+@import "hero.css";
+@import "description.css";
 @import "halls.css";
+@import "booking.css";
 @import "about-us.css";
 @import "quote.css";
 @import "creator.css";

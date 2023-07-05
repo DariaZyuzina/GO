@@ -1,0 +1,66 @@
+.description {}
+
+.description__container {}
+
+.description__list {
+    display: flex;
+    gap: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.description__item {
+    display: flex;
+    flex: 0 1 380px;
+    min-height: 228px;
+    align-items: flex-start;
+    padding: 166px 40px 6px;
+}
+
+.description__item_name_vr {
+    background-image: url("../image_go/description/vr.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.description__item_name_audio {
+    background-image: url("../image_go/description/audio.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.description__item_name_karaoke {
+    background-image: url("../image_go/description/karaoke.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.description__item_name_play {
+    background-image: url("../image_go/description/play.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.description__item_name_film {
+    background-image: url("../image_go/description/film.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.description__item_name_ps5 {
+    background-image: url("../image_go/description/ps5.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.description__text {
+    max-width: 300px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+}
