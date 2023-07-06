@@ -42,13 +42,30 @@
     padding: 7px 15px;
 }
 
-.booking__hall[type=radio]:checked+label {
-    border: 1px solid #CD06FF;
-    box-shadow: 2px 2px 10px #cd06ff88;
+.booking__input-hall[type=radio]:checked+label {
+    border: 3px solid #CD06FF;
 }
 
-.booking__hall[type=radio] {
-    display: none;
+.booking__input-hall {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.booking__name-hall:hover {
+    border: 3px solid #640AA3;
+    background: #EADEED;
+}
+
+.booking__name-hall:focus {
+    border: 3px solid #640AA3;
+    background: #FFF;
+}
+
+.booking__name-hall:active {
+    border: 3px solid #FFF;
+    background: #6C0287;
 }
 
 .booking__subset {
@@ -65,19 +82,11 @@
     line-height: normal;
     margin-bottom: 20px;
     position: relative;
-    padding-left: 32px;
+    padding-left: 38px;
 }
 
 .booking__name-set:last-child {
     margin-bottom: 0;
-}
-
-.booking__name-set input {
-    position: absolute;
-    top: 6px;
-    left: 0;
-    transform: scale(2.08);
-    margin: 0;
 }
 
 .booking__set {
@@ -87,6 +96,85 @@
     padding: 0;
     margin-bottom: 60px;
 }
+/* -------- */
+.booking__input-console {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.booking__input-console:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 27px;
+    height: 27px;
+    background-color: #ffffff;
+    border-radius: 27px;
+}
+
+.booking__input-console:after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    display: block;
+    width: 33px;
+    height: 33px;
+    border: 1px solid #CD06FF;
+    opacity: 0;
+}
+
+.booking__input-console:checked:after {
+    opacity: 1;
+}
+
+/* --------------- */
+
+.booking__input-play {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.booking__input-play:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 27px;
+    height: 27px;
+    background-color: #ffffff;
+}
+
+.booking__input-play:after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    display: block;
+    width: 33px;
+    height: 33px;
+    border: 1px solid #CD06FF;
+    opacity: 0;
+}
+
+.booking__input-play:checked:after {
+    opacity: 1;
+}
+
+/* ---------- */
 
 .booking__choice {
     display: flex;

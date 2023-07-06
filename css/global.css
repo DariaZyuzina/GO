@@ -58,3 +58,11 @@ iframe {
 cite {
     font-style: normal;
 }
+
+legend {
+    padding: 0;
+}
+
+input {
+    margin: 0;
+}
