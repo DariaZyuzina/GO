@@ -24,14 +24,15 @@
             <a class="logo" href="#"><img src="image_go/logo.svg" alt="logo"></a>
             <nav class="navigation">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a class="navigation__link" href="#">Залы</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#">О нас</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#">Бронь</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#">Отзывы</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#halls">Залы</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#aboutUs">О нас</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#booking">Бронь</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#reviews">Отзывы</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#contacts">Контакты</a></li>
                 </ul>
+                <button class="header__btn" type="button"><a href="#booking">Заказать звонок</a></button>
             </nav>
-            <button class="header__btn" type="submit">Заказать звонок</button>
+            
         </div>
     </header>
     <main>
@@ -40,14 +41,15 @@
                 <h1 class="hero__title">Game Over</h1>
                 <p class="hero__subtitle">Новый формат игр и отдыха</p>
                 <div class="hero__block">
-                    <p class="hero__text"><span class="hero__text-four">4</span> Тематических зала</p>
+                    <p class="hero__text"><span class="hero__text-count">4</span> Тематических зала</p>
                     <p class="hero__text"><span class="hero__text-new">new</span> Новейшая аппаратура</p>
                 </div>
-                <button class="hero__btn" type="submit">Забронировать</button>
+                <button class="hero__btn" type="button"><a href="#booking">Забронировать</a></button>
+                <a class="hero__btn-down" href="#description"></a>
             </div>
         </section>
 
-        <section class="section description">
+        <section class="section description" id="description">
             <div class="container description__container">
                 <h2 class="title"> У нас есть все для классного отдыха с друзьями!</h2>
             <ul class="description__list">

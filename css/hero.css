@@ -17,8 +17,7 @@
     z-index: 1;
 }
 
-.hero__container:before {
-    content: '';
+.hero__btn-down {
     background-image: url("../image_go/down.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -28,6 +27,14 @@
     bottom: 90px;
     left: 50%;
     z-index: 2;
+}
+
+.hero__btn-down:hover {
+    background-image: url("../image_go/down-hover.svg");
+}
+
+.hero__btn-down:active {
+    background-image: url("../image_go/down-active.svg");
 }
 
 .hero__title {
@@ -73,7 +80,7 @@
     font-weight: 900;
 }
 
-.hero__text-four {
+.hero__text-count {
     font-size: 100px;
 }
 
@@ -106,4 +113,13 @@
     top: 0;
     z-index: -1;
 
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+    background: #840AA3;
+}
+
+.hero__btn:active {
+    background: #640AA3;
 }
