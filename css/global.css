@@ -64,5 +64,10 @@ legend {
 }
 
 input {
+    outline: none;
     margin: 0;
+}
+
+input::-webkit-input-placeholder {
+    padding: 0;
 }
