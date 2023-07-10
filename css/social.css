@@ -15,3 +15,11 @@
     display: block;
     color: #FFFFFF;
 }
+
+.social__link:hover, .social__link:focus {
+    color: #EADEED;
+}
+
+.social__link:active {
+    color: #CD06FF;
+}

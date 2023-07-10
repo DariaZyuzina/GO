@@ -4,6 +4,7 @@
 
 .faq__item {
     padding: 21px 70px;
+    cursor: pointer;
 }
 
 .faq__item:after {
@@ -29,8 +30,24 @@
     background-image: url(../img/elements/open-purple.svg);
 }
 
+.faq__item:nth-child(odd):hover:after {
+    background-image: url(../image_go/open-purple-hover.svg);
+}
+
+.faq__item:nth-child(odd):active:after {
+    background-image: url(../image_go/close-purple.svg);
+}
+
 .faq__item:nth-child(even):after {
     background-image: url(../img/elements/open.svg);
+}
+
+.faq__item:nth-child(even):hover:after {
+    background-image: url(../image_go/open-white-hover.svg);
+}
+
+.faq__item:nth-child(even):active:after {
+    background-image: url(../image_go/close-white.svg);
 }
 
 .faq__item:not(:last-child) {

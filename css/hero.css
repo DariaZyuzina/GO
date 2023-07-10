@@ -33,6 +33,12 @@
     background-image: url("../image_go/down-hover.svg");
 }
 
+.hero__btn-down:focus {
+    width: 99px;
+    height: 99px;
+    border: 1px solid #CD06FF;
+}
+
 .hero__btn-down:active {
     background-image: url("../image_go/down-active.svg");
 }

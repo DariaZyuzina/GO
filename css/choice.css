@@ -28,6 +28,10 @@
 
 }
 
+.choice__input:focus {
+    border: 2px solid #CD06FF;
+}
+
 .choice__input::-webkit-inner-spin-button {
     display: block;
     background-image: url(../image_go/arrow.svg);
