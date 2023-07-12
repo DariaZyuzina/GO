@@ -14,10 +14,16 @@
 .social__link {
     display: block;
     color: #FFFFFF;
+    transition-duration: 0.2s;
 }
 
-.social__link:hover, .social__link:focus {
+.social__link:hover {
     color: #EADEED;
+}
+
+.social__link:focus {
+    color: #EADEED;
+    outline: 1px solid #CD06FF;
 }
 
 .social__link:active {

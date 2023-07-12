@@ -8,8 +8,6 @@
 .halls__item {
     display: inline-block;
     vertical-align: middle;
-    width: 580px;
-    padding: 135px 0;
     margin: 10px;
 }
 
@@ -23,6 +21,13 @@
     color: #FFFFFF;
     text-decoration: none;
     margin: 0 auto;
+    width: 580px;
+    padding: 135px 0;
+    transition-duration: 0.2s;
+}
+
+.halls__link:hover {
+    transform: scale(1.1);
 }
 
 .halls__item_name_vibes {

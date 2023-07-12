@@ -27,6 +27,7 @@
     bottom: 90px;
     left: 50%;
     z-index: 2;
+    transition-duration: 0.2s;
 }
 
 .hero__btn-down:hover {
@@ -34,9 +35,9 @@
 }
 
 .hero__btn-down:focus {
-    width: 99px;
-    height: 99px;
-    border: 1px solid #CD06FF;
+    width: 97px;
+    height: 97px;
+    outline: 1px solid #CD06FF;
 }
 
 .hero__btn-down:active {
@@ -105,6 +106,7 @@
     line-height: 1.15;
     text-transform: uppercase;
     padding: 25px 69px;
+    transition-duration: 0.2s;
 }
 
 .hero__btn:before {

@@ -30,7 +30,7 @@
                     <li class="navigation__item"><a class="navigation__link" href="#reviews">Отзывы</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="#contacts">Контакты</a></li>
                 </ul>
-                <button class="header__btn" type="button"><a href="#booking">Заказать звонок</a></button>
+                <button class="header__btn" type="button">Заказать звонок</button>
             </nav>
 
         </div>
@@ -154,11 +154,11 @@
                             <div class="choice__row">
                                 <label class="choice__name" for="data"><input
                                         class="choice__input choice__input_size_small" type="text"
-                                        id="data" name="data" placeholder="Дата" onfocus="(this.type='date')"
+                                        id="data" name="data" placeholder="Дата" onfocus="(this.type='date')" onblur="(this.type='text')"
                                         required></label>
                                 <label class="choice__name" for="time"><input
                                         class="choice__input choice__input_size_small" type="text"
-                                        id="time" name="time" placeholder="Время" onfocus="(this.type='time')"
+                                        id="time" name="time" placeholder="Время" onfocus="(this.type='time')" onblur="(this.type='text')"
                                         required></label>
                             </div>
                             <label class="choice__name" for="numberOfPerson"><input class="choice__input" type="number"
@@ -296,7 +296,7 @@
                         <address class="contact__block">
                             <p class="contact__text">г.Москва
                                 ул.Аквамарина, 16</p>
-                            <a class="contact__link contact__link_type_phone" href="tel:89509302893">8(950)930-28-93</a>
+                            <a class="contact__link contact__link_type_phone" href="tel:89509302893">8 (950) 930-28-93</a>
                             <a class="contact__link contact__link_type_email"
                                 href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
                         </address>
@@ -350,8 +350,8 @@
                 <div class="copy">
                     <p class="copy__text">&#169; Game Over, 2022</p>
                     <div class="copy__two-column">
-                        <p class="copy__text">Design by Anastasia Ilina</p>
-                        <p class="copy__text">ilina9825@gmail.com</p>
+                        <p class="copy__text">Design by <a class="copy__link" href="https://web.telegram.org/">Anastasia Ilina</a></p>
+                        <p class="copy__text"><a class="copy__link" href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a></p>
                     </div>
                 </div>
             </div>

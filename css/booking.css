@@ -89,6 +89,7 @@
     height: 60px;
     align-self: flex-end;
     margin-right: 100px;
+    transition-duration: 0.2s;
 }
 
 .booking__btn:hover {

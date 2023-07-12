@@ -52,10 +52,20 @@
     font-size: 22px;
     line-height: 2.27;
     text-transform: uppercase;
+    transition-duration: 0.2s;
+}
+
+.navigation__link:hover, .navigation__link:focus {
+    color: #CD06FF;
+}
+
+.navigation__link:active {
+    color: #EADEED;
 }
 
 .header__btn {
     height: 55px;
+    width: 280px;
     font-size: 22px;
     color: #FFFFFF;
     background-color: transparent;
@@ -64,7 +74,8 @@
     text-transform: uppercase;
     border-radius: 10px;
     border: 3px solid #CD06FF;
-    padding: 12px 30px;
+    padding: 12px 29px;
+    transition-duration: 0.2s;
 }
 
 .header__btn:hover,
@@ -74,7 +85,7 @@
 }
 
 .header__btn:active {
-    border: 1px solid #000;
+    border: 3px solid #000;
     background: #640AA3;
 }
 
@@ -117,4 +128,16 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 1.60;
+}
+
+.copy__link {
+    transition-duration: 0.2s;
+}
+
+.copy__link:hover, .copy__link:focus {
+    color: #d1c9d2;
+}
+
+.copy__link:active {
+    color: #CD06FF;
 }

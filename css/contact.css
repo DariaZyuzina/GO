@@ -1,5 +1,6 @@
 .contact__block {
     font-weight: 700;
+    font-style: normal;
     font-size: 24px;
     line-height: 1.17;
     margin-bottom: 39px;
@@ -20,6 +21,15 @@
     text-decoration: none;
     color: #FFFFFF;
     padding-left: 61px;
+    transition-duration: 0.2s;
+}
+
+.contact__link:hover, .contact__link:focus {
+    color: #EADEED;
+}
+
+.contact__link:active {
+    color: #CD06FF;
 }
 
 .contact__link:not(:last-child) {
