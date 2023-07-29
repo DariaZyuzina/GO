@@ -11,6 +11,22 @@
     vertical-align: middle;
     text-align: center;
     margin-right: 15px;
+    z-index: 2;
+    position: relative;
+    
+}
+
+.card__column:after {
+    content: '';
+    display: block;    
+	width: 280px;
+	height: 280px;  
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%);
 }
 
 .card__img {
@@ -21,6 +37,7 @@
     border-radius: 50%;
     margin-bottom: 11px;
 }
+
 
 .card__title {
     font-weight: 400;

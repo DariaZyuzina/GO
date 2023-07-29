@@ -37,7 +37,7 @@
 .hero__btn-down:focus {
     width: 97px;
     height: 97px;
-    outline: 1px solid #CD06FF;
+    outline: 1px solid var(--color-primary-lighter, #CD06FF);
 }
 
 .hero__btn-down:active {
@@ -83,7 +83,7 @@
 
 .hero__text span {
     font-family: "Arial Black", sans-serif;
-    color: #CD06FF;
+    color: var(--color-primary-lighter, #CD06FF);
     font-weight: 900;
 }
 
@@ -100,7 +100,7 @@
     position: relative;
     border-radius: 10px;
     color: #FFFFFF;
-    background: #6C0287;
+    background: var(--color-primary, #6C0287);
     font-size: 26px;
     font-weight: 700;
     line-height: 1.15;
@@ -112,7 +112,7 @@
 .hero__btn:before {
     content: '';
     border-radius: 10px;
-    background: #6C0287;
+    background: var(--color-primary, #6C0287);
     filter: blur(10px);
     width: 100%;
     height: 80px;
@@ -125,9 +125,9 @@
 
 .hero__btn:hover,
 .hero__btn:focus {
-    background: #840AA3;
+    background: var(--color-primary-light, #840AA3);
 }
 
 .hero__btn:active {
-    background: #640AA3;
+    background: var(--color-primary-dark, #640AA3);
 }

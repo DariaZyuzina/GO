@@ -54,7 +54,7 @@
     display: block;
     width: 17px;
     height: 17px;
-    background-color: #CD06FF;
+    background-color: var(--color-primery-lighter, #CD06FF);
     border-radius: 50%;
     opacity: 0;
 }
@@ -66,7 +66,7 @@
 .set__radio:focus {
     width: 27px;
     height: 27px;
-    outline: 1px solid #CD06FF;
+    outline: 1px solid var(--color-primery-lighter, #CD06FF);
 }
 
 .set__radio:disabled:before {
@@ -101,14 +101,14 @@
     display: block;
     width: 17px;
     height: 17px;
-    background-color: #CD06FF;
+    background-color: var(--color-primery-lighter, #CD06FF);
     opacity: 0;
 }
 
 .set__checkbox:focus {
     width: 27px;
     height: 27px;
-    outline: 1px solid #CD06FF;
+    outline: 1px solid var(--color-primery-lighter, #CD06FF) ;
 }
 
 .set__checkbox:checked:after {

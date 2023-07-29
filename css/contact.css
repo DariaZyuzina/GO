@@ -1,3 +1,18 @@
+.contact {
+    background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+}
+
+.contact__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 156px;
+}
+
+.contact__two-column {
+    margin-bottom: 10px;
+}
+
 .contact__block {
     font-weight: 700;
     font-style: normal;
@@ -25,11 +40,11 @@
 }
 
 .contact__link:hover, .contact__link:focus {
-    color: #EADEED;
+    color: var(--color-primery-lightest, #EADEED);
 }
 
 .contact__link:active {
-    color: #CD06FF;
+    color: var(--color-primary-lighter, #CD06FF);
 }
 
 .contact__link:not(:last-child) {

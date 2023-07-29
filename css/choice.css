@@ -29,7 +29,7 @@
 }
 
 .choice__input:focus {
-    border: 2px solid #CD06FF;
+    border: 2px solid var(--color-primary-lighter, #CD06FF);
 }
 
 .choice__input::-webkit-inner-spin-button {

@@ -4,14 +4,15 @@
 
 .description__list {
     display: flex;
-    gap: 40px 20px;
     flex-wrap: wrap;
+    height: 566px;
+    justify-content: space-between;
 }
 
 .description__item {
     display: flex;
     flex: 0 1 380px;
-    min-height: 228px;
+    height: 228px;
     align-items: flex-start;
     padding: 166px 40px 6px;
     transition-duration: 0.2s;
@@ -34,6 +35,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    align-self: flex-end;
 }
 
 .description__item_name_karaoke {
@@ -55,6 +57,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    align-self: flex-end;
 }
 
 .description__item_name_ps5 {

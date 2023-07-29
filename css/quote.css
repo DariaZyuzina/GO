@@ -27,7 +27,7 @@
     font-weight: 900;
     font-size: 44px;
     line-height: 1.14;
-    color: #6C0287;
+    color: var(--color-primary, #6C0287);
 }
 
 .quote__text:after {
@@ -36,5 +36,5 @@
     font-weight: 900;
     font-size: 44px;
     line-height: 1.14;
-    color: #6C0287;
+    color: var(--color-primary, #6C0287);
 }

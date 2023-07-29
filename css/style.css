@@ -56,11 +56,11 @@
 }
 
 .navigation__link:hover, .navigation__link:focus {
-    color: #CD06FF;
+    color: var(--color-primary-lighter, #CD06FF);
 }
 
 .navigation__link:active {
-    color: #EADEED;
+    color: var(--color-primery-lightest, #EADEED) ;
 }
 
 .header__btn {
@@ -73,20 +73,20 @@
     line-height: 1.36;
     text-transform: uppercase;
     border-radius: 10px;
-    border: 3px solid #CD06FF;
+    border: 3px solid var(--color-primary-lighter, #CD06FF);
     padding: 12px 29px;
     transition-duration: 0.2s;
 }
 
 .header__btn:hover,
 .header__btn:focus {
-    border: 3px solid #6C0287;
-    background: #6C0287;
+    border: 3px solid var(--color-primary, #6C0287);
+    background: var(--color-primary, #6C0287);
 }
 
 .header__btn:active {
     border: 3px solid #000;
-    background: #640AA3;
+    background: var(--color-primary-dark, #640AA3);
 }
 
 .title {
@@ -97,21 +97,6 @@
     text-align: center;
     text-transform: uppercase;
     margin: 0 auto 60px;
-}
-
-.contact {
-    background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
-}
-
-.contact__container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 156px;
-}
-
-.contact__two-column {
-    margin-bottom: 10px;
 }
 
 .style-map {
@@ -139,5 +124,5 @@
 }
 
 .copy__link:active {
-    color: #CD06FF;
+    color: var(--color-primary-lighter, #CD06FF);
 }

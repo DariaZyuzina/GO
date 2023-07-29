@@ -1,5 +1,5 @@
 .booking {
-    background: #440F51;
+    background: var(--color-primary-darkest, #440F51);
 }
 
 .booking__form {
@@ -39,7 +39,7 @@
 }
 
 .booking__input-hall[type=radio]:checked+label {
-    border: 3px solid #CD06FF;
+    border: 3px solid var(--color-primary-lighter, #CD06FF);
 }
 
 .booking__input-hall {
@@ -50,18 +50,18 @@
 }
 
 .booking__name-hall:hover {
-    border: 3px solid #640AA3;
+    border: 3px solid var(--color-primary-dark, #640AA3);
     background: #EADEED;
 }
 
 .booking__name-hall:focus {
-    border: 3px solid #640AA3;
+    border: 3px solid var(--color-primary-dark, #640AA3);
     background: #FFF;
 }
 
 .booking__name-hall:active {
     border: 3px solid #FFF;
-    background: #6C0287;
+    background: var(--color-primary, #6C0287);
 }
 
 .booking__set {
@@ -78,7 +78,7 @@
 
 .booking__btn {
     background-color: #fff;
-    color: #6C0287;
+    color: var(--color-primary, #6C0287);
     border-radius: 10px;
     font-size: 22px;
     font-weight: 700;
@@ -93,15 +93,15 @@
 }
 
 .booking__btn:hover {
-    border: 3px solid #6C0287;
+    border: 3px solid var(--color-primary, #6C0287);
     background: #EADEED;
 }
 
 .booking__btn:focus {
-    border: 3px solid #6C0287;
+    border: 3px solid var(--color-primary, #6C0287);
     background: #FFF;
 }
 
 .booking__btn:active {
-    background: #EADEED;
+    background: var(--color-primery-lightest, #EADEED) ;
 }
