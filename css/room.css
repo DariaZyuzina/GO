@@ -1,0 +1,106 @@
+.back {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.27;
+    margin: 7px 0 18px;
+    display: block;
+    position: relative;
+    padding-left: 40px;
+}
+
+.back:after {
+    content: '';
+    display: block;
+    background-image: url(../image_go/Arrow-back.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.room {
+    width: 100%;
+    min-height: 750px;
+    background: linear-gradient(rgba(0, 0, 0, 0.477), rgba(0, 0, 0, 0.477)), url("../image_go/80-vibes.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom 40% center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.room__name {
+    text-align: center;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.room__description {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-room__img {
+    max-width: 600px;
+    height: 424px;
+    object-fit: cover;
+}
+
+.about-room__block {
+    display: flex;
+    column-gap: 80px;
+    align-items: center;
+}
+
+.about-room__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: 500px;
+}
+
+.about-room__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.other-room {
+    margin-bottom: 62px;
+}
+
+.other-room__list {
+    display: flex;
+    column-gap: 20px;
+    padding: 0;
+    
+}
+
+.other-room__item {
+    flex: 0 1 33.33%;
+    margin: 0;
+}
+
+.other-room__link {
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 78px 0;
+}
+
+.other-room__link span {
+    width: 170px;
+    display: block;
+    margin: 0 auto;
+}

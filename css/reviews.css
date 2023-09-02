@@ -6,11 +6,13 @@
     margin-bottom: 50px;
 }
 
+.reviews__card {
+    display: flex;
+}
+
 .card__column {
-    display: inline-block;
-    vertical-align: middle;
     text-align: center;
-    margin-right: 15px;
+    margin-right: 20px;
     z-index: 2;
     position: relative;
     
@@ -35,7 +37,7 @@
     object-fit: cover;
     object-position: 50% 15%;
     border-radius: 50%;
-    margin-bottom: 11px;
+    margin-bottom: 7px;
 }
 
 
@@ -52,5 +54,5 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
-    padding-top: 50px;
+    padding-top: 52px;
 }

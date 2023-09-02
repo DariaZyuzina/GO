@@ -24,6 +24,7 @@
 .set__name:last-child {
     margin-bottom: 0;
 }
+
 .set__radio {
     position: absolute;
     -webkit-appearance: none;
@@ -63,7 +64,7 @@
     opacity: 1;
 }
 
-.set__radio:focus {
+.set__radio:focus:before {
     width: 27px;
     height: 27px;
     outline: 1px solid var(--color-primery-lighter, #CD06FF);
@@ -72,6 +73,7 @@
 .set__radio:disabled:before {
     background-color: #cccccc;
 }
+
 .set__checkbox {
     position: absolute;
     -webkit-appearance: none;
@@ -105,10 +107,10 @@
     opacity: 0;
 }
 
-.set__checkbox:focus {
+.set__checkbox:focus::before {
     width: 27px;
     height: 27px;
-    outline: 1px solid var(--color-primery-lighter, #CD06FF) ;
+    outline: 1px solid var(--color-primery-lighter, #CD06FF);
 }
 
 .set__checkbox:checked:after {
@@ -117,4 +119,106 @@
 
 .set__checkbox:disabled:before {
     background-color: #cccccc;
+}
+
+@media (max-width: 864px) {
+    .set {
+        flex-wrap: wrap;
+        row-gap: 32px;
+    }
+
+    .set__name {
+        padding-left: 60px;
+        margin-bottom: 35px;
+    }
+
+    .set__title {
+        margin-bottom: 32px;
+    }
+
+    .set__checkbox:before {
+        top: -8px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .set__checkbox:after {
+        width: 30px;
+        height: 30px;
+        top: -3px;
+    }
+
+    .set__checkbox:focus:before {
+        width: 40px;
+        height: 40px;
+        outline: 1px solid var(--color-primery-lighter, #CD06FF);
+    }
+
+    .set__radio:before {
+        top: -8px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .set__radio:after {
+        width: 30px;
+        height: 30px;
+        top: -3px;
+    }
+
+    .set__radio:focus:before {
+        width: 40px;
+        height: 40px;
+        outline: 1px solid var(--color-primery-lighter, #CD06FF);
+    }
+
+    .set__block {
+        flex: 0 1 300px;
+    }
+}
+
+@media (max-width: 550px) {
+    .set__name {
+        font-size: 16px;
+        padding-left: 50px;
+        margin-bottom: 27px;
+    }
+
+    .set__title {
+        margin-bottom: 22px;
+    }
+
+    .set__checkbox:before {
+        top: -8px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .set__checkbox:after {
+        width: 20px;
+        height: 20px;
+    }
+
+    .set__checkbox:focus:before {
+        width: 30px;
+        height: 30px;
+        outline: 1px solid var(--color-primery-lighter, #CD06FF);
+    }
+
+    .set__radio:before {
+        top: -8px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .set__radio:after {
+        width: 20px;
+        height: 20px;
+    }
+
+    .set__radio:focus:before {
+        width: 30px;
+        height: 30px;
+        outline: 1px solid var(--color-primery-lighter, #CD06FF);
+    }
 }

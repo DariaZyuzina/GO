@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 156px;
+    margin-bottom: 150px;
 }
 
 .contact__two-column {
@@ -22,13 +22,14 @@
 }
 
 .contact__text {
-    margin-bottom: 33px;
+    margin-bottom: 42px;
     width: 290px;
     padding-left: 61px;
     background-image: url("../image_go/adress/location.svg");
     background-repeat: no-repeat;
     background-size: 35px 32px;
     background-position: left;
+    line-height: 1.3;
 }
 
 .contact__link {

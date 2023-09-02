@@ -64,7 +64,8 @@
 
 }
 
-.choice__input::-webkit-datatime-edit, .choice__input::-webkit-datatime-edit-fields-wrapper {
+.choice__input::-webkit-datatime-edit,
+.choice__input::-webkit-datatime-edit-fields-wrapper {
     font-size: 16px;
     line-height: 1.25;
 }
@@ -76,3 +77,54 @@
     background-repeat: no-repeat;
     background-position: right 16px center;
 }
+
+@media (max-width: 1280px) {
+    .choice__block {
+        flex: 0 1 254px;
+    }
+}
+
+@media (max-width: 864px) {
+    .choice {
+        flex-wrap: wrap;
+    }
+
+    .choice__block_row {
+        flex-direction: row;
+        column-gap: 106px;
+        flex: 0 1 100%;
+        justify-content: space-between;
+    }
+
+    .choice__row {
+        column-gap: 14px;
+    }
+
+    .choice__input {
+        width: 300px;
+    }
+
+    .choice__input_count_person {
+    }
+
+    .choice__input_size_other {
+        width: 280px;
+    }
+
+    .choice__input_size_small {
+        width: 134px;
+    }
+}
+
+/* @media (max-width: 864px) {
+    .choice {
+        display: grid;
+        grid-template-columns: minmax(200px, 280px) 1fr;
+        grid-template-rows: 53px 1fr;
+    }
+
+    .choice__block_row {
+        grid-column: 1
+        grid-row: ;
+    }
+} */

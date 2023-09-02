@@ -1,5 +1,6 @@
 .booking {
     background: var(--color-primary-darkest, #440F51);
+    padding: 80px 0;
 }
 
 .booking__form {
@@ -20,7 +21,7 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 1.16;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
 }
 
 .booking__name-hall {
@@ -30,12 +31,13 @@
     color: #000;
     background-color: #FFFFFF;
     border-radius: 8px;
-    text-align: center;
     font-size: 30px;
     font-weight: 700;
     line-height: 1.33;
     text-transform: uppercase;
-    padding: 7px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .booking__input-hall[type=radio]:checked+label {
@@ -69,7 +71,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
-    margin: 0 100px 60px;
+    margin: 0 100px 65px;
 }
 
 .booking__set:nth-child(3) {
@@ -84,12 +86,28 @@
     font-weight: 700;
     line-height: 1.27;
     text-transform: uppercase;
-    padding: 16px 50px;
-    max-width: 300px;
+    width: 300px;
     height: 60px;
     align-self: flex-end;
     margin-right: 100px;
+    position: relative;
     transition-duration: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking__btn:before {
+    content: '';
+    border-radius: 10px;
+    background-color: #fff;
+    filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }
 
 .booking__btn:hover {
@@ -103,5 +121,96 @@
 }
 
 .booking__btn:active {
-    background: var(--color-primery-lightest, #EADEED) ;
+    background: var(--color-primery-lightest, #EADEED);
+}
+
+@media (max-width: 1280px) {
+    .booking__title {
+        margin-bottom: 26px;
+    }
+
+    .booking__name-hall {
+        font-size: 20px;
+        line-height: 1.2;
+        height: 44px;
+        flex: 0 1 180px;
+        border-radius: 6px;
+    }
+
+    .booking__set {
+        margin: 0 0 50px;
+    }
+
+    .booking__btn {
+        margin-right: 0;
+        font-size: 18px;
+        line-height: 1.33;
+        height: 50px;
+        width: 254px;
+    }
+}
+
+@media (max-width: 864px) {
+    .booking__title {
+        margin-bottom: 30px;
+    }
+
+    .booking__name-hall {
+        font-size: 16px;
+        line-height: 1.25;
+        height: 38px;
+        flex: 0 1 150px;
+    }
+
+    .booking__btn {
+        height: 60px;
+        font-size: 22px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 688px) {
+    .booking__main-set {
+        flex-wrap: wrap;
+        gap: 25px 15px;
+    }
+
+    .booking__name-hall {
+        flex: 0 1 48%;
+    }
+
+    .booking__btn {
+        align-self: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .booking__main-set {
+        row-gap: 14px;
+    }
+
+    .booking__title {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .booking__name-hall {
+        font-size: 14px;
+        line-height: 1.28;
+        height: 30px;
+        border-radius: 4px;
+        
+    }
+}
+
+@media (max-width: 443px) {
+    .booking__name-hall {
+        flex: 0 1 130px;
+    }
+
+    .booking__btn {
+        font-size: 18px;
+        line-height: 1.44;
+        width: 100%;
+    }
 }

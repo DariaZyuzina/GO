@@ -19,7 +19,7 @@
 }
 
 .description__item:hover {
-    box-shadow:0 0 10px #ffffff89;
+    box-shadow: 0 0 10px #ffffff89;
     transform: scale(1.1);
 }
 
@@ -72,4 +72,83 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 1.4;
+}
+
+@media (max-width: 1280px) {
+    .description__list {
+        height: 404px;
+        gap: 20px;
+        justify-content: space-around;
+    }
+
+    .description__item {
+        flex: 0 1 287px;
+        height: 172px;
+        padding: 114px 20px 0
+    }
+
+    .description__item_name_film {
+        padding: 83px 20px 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .description__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+    }
+}
+
+@media (max-width: 864px) {
+    .description__item {
+        height: 200px;
+        padding: 132px 30px 0;
+    }
+
+}
+
+@media (max-width: 733px) {
+    .description__list {
+        gap: 18px;
+    }
+    .description__item {
+        padding: 132px 15px 0;
+    }
+
+    .description__item_name_film {
+        padding: 117px 30px 0;
+    }
+    .description__text {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .description__list {
+        gap: 10px;
+    }
+
+    .description__item {
+        height: 149px;
+        padding: 90px 10px 0;
+    }
+
+    .description__text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 423px) {
+    .description__item {
+        height: 94px;
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 350px) {
+    .description__item {
+        height: 75px;
+    }
 }
