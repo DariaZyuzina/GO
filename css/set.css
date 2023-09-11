@@ -121,10 +121,19 @@
     background-color: #cccccc;
 }
 
+
+@media (max-width: 1280px) {
+    .set {
+        column-gap: 110px;
+        justify-content: normal; 
+    }
+}
+
+
 @media (max-width: 864px) {
     .set {
         flex-wrap: wrap;
-        row-gap: 32px;
+        row-gap: 39px;
     }
 
     .set__name {
@@ -173,7 +182,7 @@
     }
 
     .set__block {
-        flex: 0 1 300px;
+        flex: 0 1 254px;
     }
 }
 

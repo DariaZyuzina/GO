@@ -70,7 +70,8 @@
 
 @media (max-width: 1280px) {
     .halls {
-        padding-top: 20px;
+        padding-top: 77px;
+        padding-bottom: 71px;
     }
 
     .halls__item {
@@ -87,6 +88,15 @@
 }
 
 @media (max-width: 864px) {
+    .halls {
+        padding-top: 29px;
+        padding-bottom: 62px;
+    }
+    
+    .halls__title {
+        margin: 0 auto 34px;
+    }
+
     .halls__item {
         height: 200px;
     }
@@ -114,5 +124,20 @@
 
     .halls__link span {
         width: 137px;
+    }
+}
+
+@media (max-width: 443px) {
+    .halls {
+        padding-top: 16px;
+        padding-bottom: 30px;
+    }
+    
+    .halls__title {
+        margin-bottom: 12px;
+    }
+
+    .halls__link {
+        font-size: 26px;
     }
 }

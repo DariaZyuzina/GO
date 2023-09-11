@@ -29,3 +29,25 @@
 .social__link:active {
     color: var(--color-primary-lighter, #CD06FF);
 }
+
+@media (max-width: 1280px) {
+    .social__link svg {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 864px) {
+    
+}
+
+@media (max-width: 443px) {
+    .social__item:not(:last-child) {
+        margin-right: 20px;
+    }
+    
+    .social__link svg {
+        width: 30px;
+        height: 30px;
+    }
+}

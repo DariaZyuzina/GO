@@ -21,7 +21,16 @@
 <body>
     <header class="header">
         <div class="container header__container">
-            <a class="logo" href="#"><img src="image_go/logo.svg" alt="logo"></a>
+            <div class="burger-menu">
+                <svg width="54" height="29" viewBox="0 0 54 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="54" height="5" rx="2"/>
+                    <rect y="12" width="54" height="5" rx="2"/>
+                    <rect y="24" width="31" height="5" rx="2"/>
+                </svg>
+            </div>
+
+            <a class="logo logo-1440" href="#"><img src="image_go/logo.svg" alt="logo"></a>
+            <a class="logo logo-1024" href="#"><img src="image_go/logo-1024.svg" alt="logo"></a>
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item"><a class="navigation__link" href="index.html#halls">Залы</a></li>
@@ -30,9 +39,9 @@
                     <li class="navigation__item"><a class="navigation__link" href="index.html#reviews">Отзывы</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="#contacts">Контакты</a></li>
                 </ul>
-                <button class="header__btn" type="button">Заказать звонок</button>
+                
             </nav>
-
+            <button class="header__btn" type="button">Заказать звонок</button>
         </div>
     </header>
     <main>
@@ -40,13 +49,13 @@
             <div class="container">
                 <a href="index.html" class="back">Вернуться назад</a>
             </div>
-            <div class="room">
+            <div class="room room_name_vibes">
                 <h1 class="room__name">80’s vibes</h1>
             </div>
         </section>
-        <section class="section">
+        <section class="room-description section">
             <div class="container">
-                <p class="room__description">Вы окунетесь в незабываемую атмосферу Америки 80-х годов, стилевая музыка,
+                <p class="room-description__text">Вы окунетесь в незабываемую атмосферу Америки 80-х годов, стилевая музыка,
                     кассеты и магнитофоны. Одевайтесь ярко, берите с собой хорошее настроение и устройте большую
                     вечеринку!</p>
             </div>
@@ -87,7 +96,7 @@
                     <div class="contact__two-column">
                         <address class="contact__block">
                             <p class="contact__text">г.Москва
-                                ул.Аквамарина, 16</p>
+                                ул.Усачева, 29 к3</p>
                             <a class="contact__link contact__link_type_phone" href="tel:89509302893">8 (950)
                                 930-28-93</a>
                             <a class="contact__link contact__link_type_email"

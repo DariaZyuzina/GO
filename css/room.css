@@ -25,13 +25,42 @@
 .room {
     width: 100%;
     min-height: 750px;
-    background: linear-gradient(rgba(0, 0, 0, 0.477), rgba(0, 0, 0, 0.477)), url("../image_go/80-vibes.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom 40% center;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.room:before {
+    content: '';
+    background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%));
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.room_name_vibes {
+    background-image: url(../image_go/80-vibes.jpeg);
+    background-position: bottom 40% center;
+}
+
+.room_name_star-wars {
+    background-image: url(../image_go/star-wars-room.jpeg);
+    background-position: bottom 50% center;
+}
+
+.room_name_west {
+    background-image: url(../image_go/west-room.jpeg);
+    background-position: bottom 23% center;
+}
+
+.room_name_neon {
+    background-image: url(../image_go/neon-room.jpeg);
+    background-position: bottom 50% center;
 }
 
 .room__name {
@@ -40,9 +69,10 @@
     font-weight: 700;
     line-height: 1.1;
     text-transform: uppercase;
+    z-index: 4;
 }
 
-.room__description {
+.room-description__text {
     font-size: 24px;
     font-weight: 700;
     line-height: 1.5;
@@ -77,30 +107,194 @@
 }
 
 .other-room {
-    margin-bottom: 62px;
+    padding-bottom: 75px;
 }
 
 .other-room__list {
     display: flex;
     column-gap: 20px;
     padding: 0;
-    
+    margin: 0;
 }
 
 .other-room__item {
     flex: 0 1 33.33%;
     margin: 0;
+    height: 229px;
 }
 
 .other-room__link {
     font-size: 30px;
     width: 100%;
     height: 100%;
-    padding: 78px 0;
+    display: flex;
+    align-items: center;
 }
 
 .other-room__link span {
-    width: 170px;
+    width: 152px;
     display: block;
     margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+    .back {
+        margin: 18px 0;
+    }
+
+    .room {
+        min-height: 534px;
+    }
+
+    .section__room-description {
+        padding-top: 27px;
+    }
+
+    .room-description__text {
+        font-size: 20px;
+        max-width: 800px;
+    }
+
+    .about-room__block {
+        column-gap: 30px;
+    }
+
+    .about-room__img {
+        max-width: 461px;
+        height: 326px;
+    }
+
+    .about-room__subtitle {
+        font-size: 18px;
+    }
+
+    .other-room {
+        padding-bottom: 30px;
+    }
+
+    .other-room__item {
+        height: 176px;
+    }
+}
+
+@media (max-width: 864px) {
+    .back {
+        margin: 22px 0;
+        font-size: 16px;
+    }
+
+    .back:after {
+        top: 2px;
+    }
+
+    .room {
+        min-height: 402px;
+    }
+
+    .room-description {
+        padding-top: 5px;
+    }
+
+    .room__name {
+        font-size: 60px;
+    }
+
+    .room-description__text {
+        font-size: 16px;
+    }
+
+    .about-room__block {
+        column-gap: 46px;
+    }
+
+    .about-room__img {
+        max-width: 329px;
+    }
+
+    .about-room__subtitle {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .other-room__list {
+        column-gap: 8px;
+    }
+
+    .other-room__item {
+        height: 134px;
+    }
+
+    .other-room__link {
+        font-size: 20px;
+    }
+
+    .other-room__link span {
+        width: 104px;
+
+    }
+}
+
+@media (max-width: 650px) {
+    .about-room__block {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .about-room__img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .other-room__list {
+        flex-direction: column;
+        row-gap: 5px;
+    }
+
+    .other-room__link {
+        height: 140px;
+    }
+
+    .about-room__img {
+        height: 280px;
+    }
+}
+
+@media (max-width: 350px) {
+    .back {
+        font-size: 12px;
+        padding-left: 26px;
+        margin: 0 0 15px;
+    }
+
+    .back:after {
+        width: 16px;
+        height: 16px;
+        top: 3px;
+    }
+
+    .room {
+        min-height: 168px;
+    }
+
+    .room__name {
+        font-size: 30px;
+    }
+
+    .about-room__img {
+        height: 180px;
+    }
+
+    .about-room__text {
+        row-gap: 16px;
+    }
+
+    .about-room__subtitle {
+        font-size: 12px;
+        line-height: 1.33;
+    }
+
+    .other-room {
+        padding-bottom: 23px;
+    }
 }

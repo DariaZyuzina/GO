@@ -84,24 +84,29 @@
     }
 }
 
-@media (max-width: 864px) {
+@media (max-width: 880px) {
     .choice {
         flex-wrap: wrap;
     }
 
     .choice__block_row {
         flex-direction: row;
-        column-gap: 106px;
         flex: 0 1 100%;
         justify-content: space-between;
+        margin-bottom: 42px;
     }
 
     .choice__row {
         column-gap: 14px;
+        margin: 0;
     }
 
     .choice__input {
         width: 300px;
+    }
+
+    .choice__input::placeholder {
+        padding-left: 4px;
     }
 
     .choice__input_count_person {
@@ -116,15 +121,58 @@
     }
 }
 
-/* @media (max-width: 864px) {
+@media (max-width: 650px) {
     .choice {
-        display: grid;
-        grid-template-columns: minmax(200px, 280px) 1fr;
-        grid-template-rows: 53px 1fr;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 35px;
+    }
+
+    .choice__block {
+        align-items: flex-start;
+        flex: 0 1 100%;
     }
 
     .choice__block_row {
-        grid-column: 1
-        grid-row: ;
+        flex-direction: column;
     }
-} */
+
+    .choice__row {
+        column-gap: 32px;
+        margin-bottom: 15px;
+    }
+
+    .choice__input_size_other {
+        width: 300px;
+    }
+}
+
+@media (max-width: 350px) {
+    .choice__block_row {
+        margin-bottom: 4px;
+    }
+
+    .choice__row {
+        column-gap: 12px;
+    }
+
+    .choice__input_count_person {
+        width: 280px;
+    }
+    
+    .choice__input_size_other {
+        width: 280px;
+    }
+
+    .choice__input_name_contact {
+        width: 280px;
+    }
+
+    .choice__input_name_email {
+        width: 280px;
+    }
+
+    .choice__input::placeholder {
+        font-size: 14px;
+    }
+}

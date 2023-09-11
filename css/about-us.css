@@ -3,17 +3,24 @@
 }
 
 .about-us__column {
-    display: flex;
+    display: grid;
     column-gap: 80px;
+    grid-template-columns: max-content fit-content(500px);
+    grid-template-rows: max-content 1fr;
+    grid-template-areas:
+        "img text"
+        "img quote";
+    row-gap: 48px;
 }
 
 .about-us__block {
-    margin-bottom: 55px;
+    
 }
 
 .about-us__img {
-    width: 600px;
+    grid-area: img;
     height: 600px;
+    width: 600px;
 }
 
 .about-us__text {
@@ -29,4 +36,113 @@
 
 .about-us__text:last-child {
     margin-bottom: 0;
+}
+
+@media (max-width: 1280px) {
+    .about-us {
+        padding: 68px 0 38px;
+    }
+
+    .about-us__column {
+        column-gap: 39px;
+        row-gap: 25px;
+    }
+
+    .about-us__title{
+        margin-bottom: 28px;
+    }
+
+    .about-us__img {
+        width: 420px;
+        height: 420px;
+    }
+
+    .about-us__block {
+        margin-bottom: 13px;
+    }
+
+    .about-us__text {
+        font-size: 18px;
+        line-height: 1.33;
+        margin: 0 0 23px;
+    }
+}
+
+@media (max-width: 864px) {
+    .about-us {
+        padding: 60px 0 30px;
+    }
+
+    .about-us__column {
+        grid-template-columns: fit-content(400px) 1fr;
+        grid-template-areas:
+        "img text"
+        "quote quote";
+        column-gap: 28px;
+        row-gap: 39px;
+    }
+
+    .about-us__img {
+        width: 382px;
+        height: 382px;
+    }
+
+    .about-us__block {
+        align-self: center;
+    }
+
+    .about-us__text {
+        font-size: 16px;
+    }
+
+    .about-us__text-two {
+        white-space: normal;
+    }
+}
+
+@media (max-width: 650px) {
+    .about-us__column {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, max-content);
+        grid-template-areas: 
+        "text"
+        "img"
+        "quote";
+        gap: 15px 0;
+    }
+
+    .about-us__text-two {
+        white-space: normal;
+    }
+
+    .about-us__img {
+        justify-self: center;
+    }
+    /*  */
+}
+
+@media (max-width: 443px) {
+    .about-us {
+        padding: 30px 0 11px;
+    }
+
+    .about-us__title {
+        margin-bottom: 13px;
+    }
+
+    .about-us__block {
+        margin-bottom: 0;
+    }
+
+    .about-us__img {
+        width: 280px;
+        height: 280px;
+        margin-bottom: 5px;
+        
+    } 
+
+    .about-us__text {
+        font-size: 12px;
+        margin: 0px 0 17px;
+    }
 }

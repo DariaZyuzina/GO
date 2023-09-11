@@ -1,5 +1,5 @@
 .quote {
-    display: flow-root;
+    grid-area: quote;
     margin: 0;
 }
 
@@ -37,4 +37,50 @@
     font-size: 44px;
     line-height: 1.14;
     color: var(--color-primary, #6C0287);
+}
+
+@media (max-width: 1280px) {
+    .quote__text {
+        font-size: 30px;
+        white-space: normal;
+        line-height: 1.2;
+        padding-left: 25px;
+        max-width: 417px;
+        margin-bottom: 19px;
+    }
+
+    .quote__text:before {
+        font-size: 30px;
+        top: -10px;
+    }
+
+    .quote__text:after {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 864px) {
+    .quote__text {
+        max-width: 574px;
+        margin-bottom: 22px;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 443px) {
+    .quote__text {
+        font-size: 18px;
+        padding-left: 15px;
+        line-height: 1.4;
+        margin-bottom: 14px;
+    }
+
+    .quote__text:after {
+        font-size: 18px;
+    }
+
+    .quote__text:before {
+        font-size: 22px;
+        top: -9px;
+    }
 }

@@ -28,10 +28,33 @@
 
 .burger-menu {
     display: none;
+    cursor: pointer;
+    width: 58px;
+    height: 58px;
+    padding: 2px;
+    color: #6C0287;
+    transition: transform 0.25s;
+
+}
+
+.burger-menu:hover {
+    color: #CD06FF;
+}
+
+.burger-menu:focus {
+    border: 1px solid #CD06FF;
+}
+
+.burger-menu:active {
+    color: #840AA3;
 }
 
 .logo {
     width: 120px;
+}
+
+.logo-1024 {
+    display: none;
 }
 
 .navigation {
@@ -92,7 +115,7 @@
     line-height: 1.25;
     text-align: center;
     text-transform: uppercase;
-    margin: 0 auto 43px;
+    margin: 0 auto 44px;
 }
 
 .style-map {
@@ -129,7 +152,11 @@
 
 @media (max-width: 1280px) {
     .section:first-child {
-        padding: 34px 0 33px;
+        padding: 27px 0 48px;
+    }
+
+    .section {
+        padding: 35px 0;
     }
 
     .container {
@@ -138,6 +165,14 @@
 
     .logo {
         width: 87px;
+    }
+
+    .logo-1440 {
+        display: none;
+    }
+
+    .logo-1024 {
+        display: block;
     }
 
     .navigation__list {
@@ -158,12 +193,22 @@
     .title {
         font-size: 30px;
         margin: 0 auto 36px;
+        max-width: 653px;
+    }
+
+    .style-map {
+        max-width: 542px;
+        min-height: 274px;
     }
 }
 
 @media (max-width: 864px) {
     .section:first-child {
-        padding: 32px 0 80px;
+        padding: 18px 0 57px;
+    }
+
+    .section {
+        padding: 30px 0;
     }
 
     .container {
@@ -171,10 +216,8 @@
     }
 
     .burger-menu {
-        display: block;
-        cursor: pointer;
-        width: 54px;
-        height: 29px;
+        display: flex;
+        align-items: center;
     }
 
     .navigation {
@@ -185,6 +228,12 @@
         font-size: 24px;
         margin: 0 auto 30px;
         max-width: 524px;
+        line-height: 1.5;
+    }
+
+    .style-map {
+        max-width: 688px;
+        min-height: 337px;
     }
 }
 
@@ -206,25 +255,68 @@
 }
 
 @media (max-width: 423px) {
+    .section {
+        padding: 15px 0;
+    }
+
     .title {
         font-size: 14px;
         max-width: 304px;
         margin-bottom: 15px;
     }
+
+    .copy {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .copy__text {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .copy__text_name_copyright {
+        margin-bottom: 10px;
+    }
+
+    .copy__text_name_desing {
+        margin-bottom: 5px;
+    }
 }
 
 @media (max-width: 350px) {
+    .section:first-child {
+        padding: 17px 0 28px;
+    }
+
     .container {
         max-width: 319px;
         padding: 0 20px;
     }
 
+    .header {
+        padding-top: 20px;
+    }
+
     .burger-menu {
-        width: 39px;
-        height: 20px;
+        width: 41px;
+        height: 41px;
     }
 
     .logo {
         width: 66px;
+    }
+
+    .title {
+        margin-bottom: 11px;
+    }
+
+    .style-map {
+        max-width: 280px;
+        min-height: 194px;
+    }
+
+    .copy__text_name_copyright {
+        margin-bottom: 14px;
     }
 }

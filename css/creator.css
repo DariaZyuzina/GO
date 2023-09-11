@@ -1,10 +1,9 @@
 .creator {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .creator__img {
-    display: inline-block;
-    vertical-align: middle;
     width: 80px;
     height: 80px;
     object-fit: cover;
@@ -20,4 +19,56 @@
     line-height: 1.4;
     font-weight: 400;
     max-width: 271px;
+}
+
+@media (max-width: 1280px) {
+    .creator__img {
+        width: 70px;
+        height: 70px;
+        margin-right: 35px;
+    }
+
+    .creator__cite {
+        font-size: 18px;
+    }
+
+    .creator__cite cite {
+        width: 229px;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 864px) {
+    .creator__img {
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 443px) {
+    .creator {
+        float: none;
+    }
+    
+    .creator__img {
+        width: 56px;
+        height: 56px;
+        margin-right: 11px;
+    }
+
+    .creator__cite {
+        font-size: 12px;
+        line-height: 1.33;
+    }
+
+    .creator__cite cite {
+        width: 178px;
+        white-space: pre-line;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 350px) {
+    .creator {
+        justify-content: start;
+    }
 }

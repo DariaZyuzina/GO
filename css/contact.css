@@ -5,8 +5,8 @@
 .contact__container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin-bottom: 150px;
+    column-gap: 20px;
 }
 
 .contact__two-column {
@@ -30,6 +30,7 @@
     background-size: 35px 32px;
     background-position: left;
     line-height: 1.3;
+    white-space: pre-line;
 }
 
 .contact__link {
@@ -40,7 +41,8 @@
     transition-duration: 0.2s;
 }
 
-.contact__link:hover, .contact__link:focus {
+.contact__link:hover,
+.contact__link:focus {
     color: var(--color-primery-lightest, #EADEED);
 }
 
@@ -55,7 +57,6 @@
 .contact__link_type_phone {
     background-image: url("../image_go/adress/phone.svg");
     background-repeat: no-repeat;
-    background-size: contain;
     background-size: 35px 32px;
     background-position: left;
 }
@@ -66,4 +67,110 @@
     background-size: contain;
     background-size: 35px 32px;
     background-position: left;
+}
+
+@media (max-width: 1280px) {
+    .contact:first-child {
+        padding: 40px 0;
+    }
+
+    .contact__container {
+        margin-bottom: 92px;
+    }
+
+    .contact__title {
+        margin: 0 auto 26px;
+    }
+
+    .contact__text {
+        background-size: 26px 26px;
+        padding-left: 39px;
+    }
+
+    .contact__link {
+        padding-left: 39px;
+    }
+
+    .contact__link_type_phone {
+        background-size: 26px 26px;
+    }
+
+    .contact__link_type_email {
+        background-size: 26px 26px;
+    }
+
+}
+
+@media (max-width: 864px) {
+    .contact__container {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 75px;
+    }
+
+    .contact__two-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .contact__block {
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 27px;
+        margin-bottom: 27px;
+    }
+
+    .contact__text {
+        padding: 0;
+        background-position: 57px 3px;
+        margin: 0;
+    }
+
+    .contact__link:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 443px) {
+    .contact__container {
+        margin-bottom: 63px;
+    }
+
+    .contact__block {
+        font-size: 14px;
+        row-gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contact__two-column {
+        margin-bottom: 35px;
+    }
+
+    .contact__text {
+        white-space: pre-line;
+        background-size: 20px 20px;
+        background-position: 88px -1px;
+    }
+
+    .contact__link {
+        padding-left: 29px;
+    }
+
+    .contact__link_type_email {
+        background-size: 20px 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    .contact:first-child {
+        padding: 14px 0;
+    }
+
+    .contact__title {
+        margin: 0 auto 15px;
+    }
 }
