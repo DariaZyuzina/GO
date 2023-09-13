@@ -108,6 +108,9 @@
     width: 374px;
     height: 80px;
     transition-duration: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero__btn:before {

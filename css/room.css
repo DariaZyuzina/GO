@@ -169,6 +169,7 @@
     }
 
     .other-room {
+        padding-top: 30px;
         padding-bottom: 30px;
     }
 
@@ -295,6 +296,7 @@
     }
 
     .other-room {
+        padding-top: 15px;
         padding-bottom: 23px;
     }
 }
