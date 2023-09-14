@@ -111,6 +111,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 3;
 }
 
 .hero__btn:before {
@@ -294,7 +295,6 @@
         font-size: 14px;
         width: 194px;
         height: 40px;
-        z-index: 3;
     }
 }
 
