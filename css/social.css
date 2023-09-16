@@ -17,10 +17,6 @@
     transition-duration: 0.2s;
 }
 
-.social__link:hover {
-    color: var(--color-primery-lightest, #EADEED);
-}
-
 .social__link:focus {
     color: var(--color-primery-lightest, #EADEED);
     outline: 1px solid var(--color-primary-lighter, #CD06FF);
@@ -30,15 +26,17 @@
     color: var(--color-primary-lighter, #CD06FF);
 }
 
+@media (hover: hover) {
+    .social__link:hover {
+        color: var(--color-primery-lightest, #EADEED);
+    }
+}
+
 @media (max-width: 1280px) {
     .social__link svg {
         width: 40px;
         height: 40px;
     }
-}
-
-@media (max-width: 864px) {
-    
 }
 
 @media (max-width: 443px) {

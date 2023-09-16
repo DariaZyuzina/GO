@@ -51,11 +51,6 @@
     appearance: none;
 }
 
-.booking__name-hall:hover {
-    border: 3px solid var(--color-primary-dark, #640AA3);
-    background: #EADEED;
-}
-
 .booking__name-hall:focus {
     border: 3px solid var(--color-primary-dark, #640AA3);
     background: #FFF;
@@ -111,11 +106,6 @@
     z-index: -1;
 }
 
-.booking__btn:hover {
-    border: 3px solid var(--color-primary, #6C0287);
-    background: #EADEED;
-}
-
 .booking__btn:focus {
     border: 3px solid var(--color-primary, #6C0287);
     background: #FFF;
@@ -123,6 +113,18 @@
 
 .booking__btn:active {
     background: var(--color-primery-lightest, #EADEED);
+}
+
+@media (hover: hover) {
+    .booking__name-hall:hover {
+        border: 3px solid var(--color-primary-dark, #640AA3);
+        background: #EADEED;
+    }
+    
+    .booking__btn:hover {
+        border: 3px solid var(--color-primary, #6C0287);
+        background: #EADEED;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -232,7 +234,6 @@
         line-height: 1.28;
         height: 30px;
         border-radius: 4px;
-
     }
 }
 

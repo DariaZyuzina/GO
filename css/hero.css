@@ -30,10 +30,6 @@
     transition-duration: 0.2s;
 }
 
-.hero__btn-down:hover {
-    background-image: url("../image_go/down-hover.svg");
-}
-
 .hero__btn-down:focus {
     width: 97px;
     height: 97px;
@@ -125,10 +121,8 @@
     left: 0;
     top: 0;
     z-index: -1;
-
 }
 
-.hero__btn:hover,
 .hero__btn:focus {
     background: var(--color-primary-light, #840AA3);
 }
@@ -137,6 +131,18 @@
     background: var(--color-primary-dark, #640AA3);
 }
 
+/* ---------------------------- */
+@media (hover: hover) {
+    .hero__btn:hover {
+        background: var(--color-primary-light, #840AA3);
+    }
+
+    .hero__btn-down:hover {
+        background-image: url("../image_go/down-hover.svg");
+    }
+}
+
+/* ---------------------------- */
 @media (max-width: 1280px) {
     .hero__container {
         min-height: 583px;

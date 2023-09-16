@@ -32,21 +32,16 @@
     width: 58px;
     height: 58px;
     padding: 2px;
-    color: #6C0287;
+    color: var(--color-primary, #6C0287);
     transition: transform 0.25s;
-
-}
-
-.burger-menu:hover {
-    color: #CD06FF;
 }
 
 .burger-menu:focus {
-    border: 1px solid #CD06FF;
+    border: 1px solid var(--color-primary-lighter, #CD06FF);
 }
 
 .burger-menu:active {
-    color: #840AA3;
+    color: var(--color-primary-light, #840AA3);
 }
 
 .logo {
@@ -74,7 +69,6 @@
     transition-duration: 0.2s;
 }
 
-.navigation__link:hover,
 .navigation__link:focus {
     color: var(--color-primary-lighter, #CD06FF);
 }
@@ -97,7 +91,6 @@
     transition-duration: 0.2s;
 }
 
-.header__btn:hover,
 .header__btn:focus {
     border: 3px solid var(--color-primary, #6C0287);
     background: var(--color-primary, #6C0287);
@@ -139,7 +132,6 @@
     transition-duration: 0.2s;
 }
 
-.copy__link:hover,
 .copy__link:focus {
     color: #d1c9d2;
 }
@@ -147,7 +139,25 @@
 .copy__link:active {
     color: var(--color-primary-lighter, #CD06FF);
 }
+/* ---------------------------------------------------------- */
+@media (hover: hover) {
+    .burger-menu:hover {
+        color: var(--color-primary-lighter, #CD06FF);
+    }
 
+    .navigation__link:hover {
+        color: var(--color-primary-lighter, #CD06FF);
+    }
+
+    .header__btn:hover {
+        border: 3px solid var(--color-primary, #6C0287);
+        background: var(--color-primary, #6C0287);
+    }
+
+    .copy__link:hover {
+        color: #d1c9d2;
+    }
+}
 /* ---------------------------------------------------------- */
 
 @media (max-width: 1280px) {
@@ -241,7 +251,6 @@
     .section:first-child {
         padding: 20px 0 23px;
     }
-
 
     .header__btn {
         display: none;

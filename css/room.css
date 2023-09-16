@@ -26,7 +26,6 @@
     left: 0;
 }
 
-.back:hover,
 .back:focus {
     color: var(--color-primary-lighter, #CD06FF);
 }
@@ -170,6 +169,12 @@
     margin: 0 auto;
 }
 
+@media (hover: hover) {
+    .back:hover {
+        color: var(--color-primary-lighter, #CD06FF);
+    }
+}
+
 @media (max-width: 1280px) {
     .header_room {
         padding-bottom: 20px;
@@ -281,7 +286,7 @@
         padding-top: 6px;
         padding-bottom: 29px;
     }
-    
+
 
     .about-room__block {
         column-gap: 46px;
@@ -370,7 +375,7 @@
     .room:after {
         height: 168px;
         top: 47px;
-    }    
+    }
 
     .room__block {
         row-gap: 30px;
