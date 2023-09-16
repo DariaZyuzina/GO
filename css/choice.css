@@ -61,7 +61,6 @@
     background-repeat: no-repeat;
     width: 21px;
     height: 15px;
-
 }
 
 .choice__input::-webkit-datatime-edit,
@@ -107,9 +106,6 @@
 
     .choice__input::placeholder {
         padding-left: 4px;
-    }
-
-    .choice__input_count_person {
     }
 
     .choice__input_size_other {

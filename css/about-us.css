@@ -13,10 +13,6 @@
     row-gap: 48px;
 }
 
-.about-us__block {
-    
-}
-
 .about-us__img {
     grid-area: img;
     height: 600px;
@@ -118,7 +114,6 @@
     .about-us__img {
         justify-self: center;
     }
-    /*  */
 }
 
 @media (max-width: 443px) {

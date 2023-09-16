@@ -121,14 +121,12 @@
     background-color: #cccccc;
 }
 
-
 @media (max-width: 1280px) {
     .set {
         column-gap: 110px;
         justify-content: normal; 
     }
 }
-
 
 @media (max-width: 864px) {
     .set {
